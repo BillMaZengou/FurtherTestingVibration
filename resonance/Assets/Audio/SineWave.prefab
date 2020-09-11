@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &152432813542084179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152432813542084180}
+  - component: {fileID: 152432813542084181}
+  m_Layer: 0
+  m_Name: Output
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152432813542084180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432813542084179}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152432814807015403}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152432813542084181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432813542084179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 57947232, guid: 3756665b962c4284fb12aafb43b374aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showPreviewTexture: 1
+  attributes:
+  - name: Input
+    value: 0
+    generator: {fileID: 152432814137371188}
+    hiddenValue: 1
+    allowInput: 1
+    type: 0
+    has_many: 1
+    clampMinimum: 0
+    clampMaximum: 0
+    clampMinimumValue: 0
+    clampMaximumValue: 1
+  - name: Frequency
+    value: 150
+    generator: {fileID: 0}
+    hiddenValue: 0
+    allowInput: 1
+    type: 2
+    has_many: 0
+    clampMinimum: 0
+    clampMaximum: 0
+    clampMinimumValue: 0
+    clampMaximumValue: 1
+  - name: Duration
+    value: 0.5
+    generator: {fileID: 0}
+    hiddenValue: 0
+    allowInput: 0
+    type: 1
+    has_many: 0
+    clampMinimum: 0
+    clampMaximum: 0
+    clampMinimumValue: 0
+    clampMaximumValue: 1
+  visualPlacementRect:
+    serializedVersion: 2
+    x: 550
+    y: 202
+    width: 200
+    height: 186
+  sampleRate: 96000
+  smoothLoop: 0
+--- !u!1 &152432814137371187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152432814137371189}
+  - component: {fileID: 152432814137371188}
+  m_Layer: 0
+  m_Name: Sine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152432814137371189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432814137371187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152432814807015403}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152432814137371188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432814137371187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -507943626, guid: 3756665b962c4284fb12aafb43b374aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showPreviewTexture: 1
+  attributes:
+  - name: Phase
+    value: 0
+    generator: {fileID: 0}
+    hiddenValue: 0
+    allowInput: 1
+    type: 3
+    has_many: 0
+    clampMinimum: 1
+    clampMaximum: 1
+    clampMinimumValue: 0
+    clampMaximumValue: 1
+  visualPlacementRect:
+    serializedVersion: 2
+    x: 122
+    y: 156
+    width: 200
+    height: 52
+--- !u!1 &152432814807015402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152432814807015403}
+  - component: {fileID: 152432814807015404}
+  m_Layer: 0
+  m_Name: SineWave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152432814807015403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432814807015402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 152432814137371189}
+  - {fileID: 152432813542084180}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152432814807015404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152432814807015402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 793962591, guid: 3756665b962c4284fb12aafb43b374aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modules:
+  - {fileID: 152432814137371188}
+  - {fileID: 152432813542084181}
